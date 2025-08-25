@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -10,8 +10,10 @@ export default function AboutPage() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
             <p className="text-xl mb-8 text-blue-100">
-              Questions explained agreeable preferred strangers too him her son. 
-              There are many variations of passages.
+              At Rasyom, we are committed to delivering top-notch construction
+              services that exceed our clients expectations. With a team of
+              experienced professionals and a passion for excellence, we bring
+              your visions to life with precision and care.
             </p>
           </div>
         </div>
@@ -23,7 +25,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/assets/img/gallery/about.png"
+                src="/assets/gallery/about.png"
                 alt="About Us"
                 width={600}
                 height={400}
@@ -35,18 +37,20 @@ export default function AboutPage() {
                 Complete solution of large projects
               </h2>
               <p className="text-gray-600 mb-6">
-                Questions explained agreeable preferred strangers too him her son. 
-                There are many variations of passages. Architecture, control and 
-                construction of projects of all kinds, we have the experts in each area of work.
+                Questions explained agreeable preferred strangers too him her
+                son. There are many variations of passages. Architecture,
+                control and construction of projects of all kinds, we have the
+                experts in each area of work.
               </p>
               <p className="text-gray-600 mb-6">
-                We are a leading construction company with over 20 years of experience 
-                in delivering high-quality construction projects. Our team of experts 
-                is dedicated to providing innovative solutions that meet our clients' 
-                unique needs and exceed their expectations.
+                We are a leading construction company with over 20 years of
+                experience in delivering high-quality construction projects. Our
+                team of experts is dedicated to providing innovative solutions
+                that meet our clients unique needs and exceed their
+                expectations.
               </p>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Get In Touch
@@ -63,17 +67,17 @@ export default function AboutPage() {
             <div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="text-gray-600">
-                To deliver exceptional construction services that transform our 
-                clients' visions into reality. We are committed to excellence, 
+                To deliver exceptional construction services that transform our
+                clients visions into reality. We are committed to excellence,
                 innovation, and sustainability in every project we undertake.
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-gray-600">
-                To be the most trusted construction partner, known for our 
-                integrity, quality, and commitment to client satisfaction. 
-                We strive to set new standards in the construction industry.
+                To be the most trusted construction partner, known for our
+                integrity, quality, and commitment to client satisfaction. We
+                strive to set new standards in the construction industry.
               </p>
             </div>
           </div>
@@ -92,9 +96,21 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "John Smith", role: "Project Manager", image: "/assets/img/icon/testimonial.png" },
-              { name: "Sarah Johnson", role: "Senior Architect", image: "/assets/img/icon/testimonial.png" },
-              { name: "Mike Davis", role: "Construction Supervisor", image: "/assets/img/icon/testimonial.png" }
+              {
+                name: "John Smith",
+                role: "Project Manager",
+                image: "/assets/customers/testimonial1-2.jpg",
+              },
+              {
+                name: "Sarah Johnson",
+                role: "Senior Architect",
+                image: "/assets/customers/testimonial2.jpg",
+              },
+              {
+                name: "Mike Davis",
+                role: "Construction Supervisor",
+                image: "/assets/customers/testimonial3.jpg",
+              },
             ].map((member, index) => (
               <div key={index} className="text-center">
                 <Image

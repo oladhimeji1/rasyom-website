@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function BlogPage() {
   return (
@@ -23,54 +23,63 @@ export default function BlogPage() {
             {[
               {
                 title: "Top 10 Construction Trends for 2024",
-                image: "/assets/img/blog/single_blog_1.png",
-                excerpt: "Discover the latest trends shaping the construction industry in 2024, from sustainable materials to smart building technologies.",
+                image: "/assets/blog/single_blog_1.png",
+                excerpt:
+                  "Discover the latest trends shaping the construction industry in 2024, from sustainable materials to smart building technologies.",
                 date: "March 15, 2024",
                 author: "John Smith",
-                category: "Industry Trends"
+                category: "Industry Trends",
               },
               {
                 title: "Sustainable Construction Practices",
-                image: "/assets/img/blog/single_blog_2.png",
-                excerpt: "Learn how sustainable construction practices are revolutionizing the industry and reducing environmental impact.",
+                image: "/assets/blog/single_blog_2.png",
+                excerpt:
+                  "Learn how sustainable construction practices are revolutionizing the industry and reducing environmental impact.",
                 date: "March 10, 2024",
                 author: "Sarah Johnson",
-                category: "Sustainability"
+                category: "Sustainability",
               },
               {
                 title: "Smart Building Technologies",
-                image: "/assets/img/blog/single_blog_3.png",
-                excerpt: "Explore how smart building technologies are transforming modern construction projects and improving efficiency.",
+                image: "/assets/blog/single_blog_3.png",
+                excerpt:
+                  "Explore how smart building technologies are transforming modern construction projects and improving efficiency.",
                 date: "March 5, 2024",
                 author: "Mike Davis",
-                category: "Technology"
+                category: "Technology",
               },
               {
                 title: "Construction Safety Best Practices",
-                image: "/assets/img/blog/single_blog_4.png",
-                excerpt: "Essential safety practices every construction site should implement to protect workers and ensure compliance.",
+                image: "/assets/blog/single_blog_4.png",
+                excerpt:
+                  "Essential safety practices every construction site should implement to protect workers and ensure compliance.",
                 date: "February 28, 2024",
                 author: "Emily Wilson",
-                category: "Safety"
+                category: "Safety",
               },
               {
                 title: "Cost-Effective Construction Strategies",
-                image: "/assets/img/blog/single_blog_5.png",
-                excerpt: "Learn proven strategies to reduce construction costs without compromising on quality or safety.",
+                image: "/assets/blog/single_blog_5.png",
+                excerpt:
+                  "Learn proven strategies to reduce construction costs without compromising on quality or safety.",
                 date: "February 20, 2024",
                 author: "David Brown",
-                category: "Cost Management"
+                category: "Cost Management",
               },
               {
                 title: "Future of Construction Materials",
-                image: "/assets/img/blog/single_blog_1.png",
-                excerpt: "Discover innovative construction materials that are changing the way we build for the future.",
+                image: "/assets/blog/single_blog_1.png",
+                excerpt:
+                  "Discover innovative construction materials that are changing the way we build for the future.",
                 date: "February 15, 2024",
                 author: "Lisa Anderson",
-                category: "Innovation"
-              }
+                category: "Innovation",
+              },
             ].map((post, index) => (
-              <article key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <article
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden"
+              >
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -87,14 +96,14 @@ export default function BlogPage() {
                     <span>{post.date}</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 hover:text-indigo-600">
-                    <Link href={`/blog/${index + 1}`}>
-                      {post.title}
-                    </Link>
+                    <Link href={`/blog/${index + 1}`}>{post.title}</Link>
                   </h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">By {post.author}</span>
-                    <Link 
+                    <span className="text-sm text-gray-500">
+                      By {post.author}
+                    </span>
+                    <Link
                       href={`/blog/${index + 1}`}
                       className="text-indigo-600 hover:text-indigo-700 font-medium text-sm"
                     >
