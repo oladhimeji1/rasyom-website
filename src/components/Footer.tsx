@@ -1,158 +1,150 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
 
-export default function Footer() {
+import React from "react";
+import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+
+const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-[#171A1E] text-gray-400 py-16">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div>
-            <Image
-              src="/assets/logo/logo2_footer.png"
-              alt="Construction Company"
-              width={150}
-              height={50}
-              className="mb-4"
-            />
-            <p className="text-gray-300 mb-4">
-              No.27B Isapa Crescent Byazhin Kubwa, Abuja
+          <div className="mb-8 md:mb-0">
+            <div className="flex items-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-8 h-8 text-white mr-2"
+              >
+                <path d="M12 2L2 22h20L12 2z" />
+              </svg>
+              <h3 className="text-xl text-white font-semibold">
+                Rasyom Consults.
+              </h3>
+            </div>
+            <p className="text-sm leading-relaxed mb-4">
+              With over 10 years of experience in construction, we partner with
+              owners and design professionals to build high-quality projects.
             </p>
-            <div className="space-y-2">
-              <p className="text-gray-300">10 (87) 738-3940</p>
-              <p className="text-gray-300">rasyom@yahoo.com</p>
-            </div>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-300 hover:text-white">
+            <div className="flex space-x-4">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg
-                  className="h-6 w-6"
-                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5"
                 >
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.675V1.325C24 .593 23.407 0 22.675 0z" />
                 </svg>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <svg
-                  className="h-6 w-6"
-                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                >
-                  <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-                </svg>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <svg
-                  className="h-6 w-6"
                   fill="currentColor"
-                  viewBox="0 0 24 24"
+                  className="w-5 h-5"
                 >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.559-3.594-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067C2.179 19.29 4.768 20 7.548 20c9.142 0 14.307-7.721 13.995-14.646a9.936 9.936 0 0 0 .962-2.534z" />
                 </svg>
-              </a>
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              ></Link>
             </div>
           </div>
 
-          {/* Navigation */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Navigation</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-white">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-white">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Useful Links */}
+          <div className="mb-8 md:mb-0">
+            <h4 className="text-white font-semibold mb-4">Useful Links</h4>
+            <div className="grid grid-cols-2 gap-y-2 text-sm">
+              <Link
+                href="/about"
+                className="hover:text-white transition-colors"
+              >
+                About Us
+              </Link>
+              <Link href="/blog" className="hover:text-white transition-colors">
+                News
+              </Link>
+              <Link
+                href="/services"
+                className="hover:text-white transition-colors"
+              >
+                Services
+              </Link>
+              <Link
+                href="/careers"
+                className="hover:text-white transition-colors"
+              >
+                Careers
+              </Link>
+              <Link
+                href="/projects"
+                className="hover:text-white transition-colors"
+              >
+                Projects
+              </Link>
+              <Link href="/help" className="hover:text-white transition-colors">
+                Help Desk
+              </Link>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Drone Mapping
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Real Estate
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Commercial
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Construction
-                </Link>
-              </li>
-            </ul>
+              <Link
+                href="/contact"
+                className="hover:text-white transition-colors"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Subscribe Newsletter</h3>
-            <p className="text-gray-300 mb-4">
-              Subscribe our newsletter to get updates about our services and
-              offers.
+            <h4 className="text-white font-semibold mb-4">Newsletter</h4>
+            <p className="text-sm mb-4">
+              Subscribe to our newsletter to get updates.
             </p>
-            <form className="space-y-2">
+            <form>
               <input
                 type="email"
-                placeholder="Email Address"
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                placeholder="Enter Your Email"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
               <button
                 type="submit"
-                className="w-full bg-primary-600 text-white py-2 px-4 rounded-md hover:bg-primary-700 transition-colors"
+                className="w-full bg-orange-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors"
               >
-                Subscribe
+                Subscribe!
               </button>
             </form>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-300">
-            Copyright &copy; {new Date().getFullYear()} All rights reserved |
-            Designed with <span className="text-red-500">❤</span> by{" "}
-            <Link href="" className="text-primary-400 hover:text-primary-300">
-              Olademeji Abulzaraq
-            </Link>
+        {/* Footer Bottom Bar */}
+        <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+          <p className="mb-4 md:mb-0">
+            &copy; {new Date().getFullYear()} Rasyom Consult Ltd . All rights
+            reserved.
           </p>
+          <div className="flex space-x-4">
+            <Link href="#" className="hover:text-white transition-colors">
+              Terms of Use
+            </Link>
+            <Link href="#" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

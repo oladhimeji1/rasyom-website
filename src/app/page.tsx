@@ -3,6 +3,10 @@ import Link from "next/link";
 import HeroSlider from "../components/HeroSlider";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import Footer from "../components/Footer";
+import StatsSection from "../components/HomeStats";
+import OurCompanySection from "../components/OurCompany";
+import HomeBlogSection from "../components/HomeBlog";
+import HomeCta from "../components/HomeCta";
 export default function HomePage() {
   return (
     <>
@@ -149,6 +153,8 @@ export default function HomePage() {
           </div>
         </section>
 
+        <StatsSection />
+
         {/* Projects Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -206,6 +212,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <OurCompanySection />
 
         {/* Testminonial Section */}
 
@@ -299,92 +307,12 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Get Free Quote</h2>
-                <p className="text-gray-600 mb-6">
-                  Ready to take the next step? Contact us today for a free
-                  consultation and quote. We look forward to working with you to
-                  bring your construction project to life.
-                </p>
-                <form className="space-y-4">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                  <div>
-                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                      <option value="">Topic</option>
-                      <option value="general">General Inquiry</option>
-                      <option value="project">Project Discussion</option>
-                      <option value="quote">Request Quote</option>
-                    </select>
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Your message"
-                      rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
-              <div>
-                <Image
-                  src="/assets/gallery/form.png"
-                  alt="Contact"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <HomeBlogSection />
 
-        {/* CTA Section */}
-        <section className="py-20 bg-[#141B2D] text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold mb-4">
-                Call us and get it done
-              </h2>
-              <p className="text-xl mb-8 text-blue-100">
-                When you hire us for construction services, you know you&apos;re
-                getting highly qualified professionals who have the expertise
-                and experience to make sure your project is done properly and
-                functions.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block bg-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-100 transition-colors"
-              >
-                Call us today
-              </Link>
-            </div>
-          </div>
-        </section>
+        <HomeCta />
+
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
