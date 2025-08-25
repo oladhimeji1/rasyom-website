@@ -61,24 +61,13 @@
   height: 100vh;
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../../public/assets/hero/h1_hero1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.9; /* Adjust this value for desired fade effect */
-  z-index: -1;
-}
-
-.hero-bg-overlay {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.8) 0%, rgba(30, 64, 175, 0.8) 100%);
-}
+/* .hero-bg-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.8) 0%,
+    rgba(30, 64, 175, 0.8) 100%
+  );
+} */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

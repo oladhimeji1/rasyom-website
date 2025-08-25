@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -24,7 +24,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold mb-4">Get Free Quote</h2>
               <p className="text-gray-600 mb-6">
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
+                Fill out the form below and we will get back to you as soon as
+                possible.
               </p>
               <form className="space-y-4">
                 <div>
@@ -63,10 +64,14 @@ export default function ContactPage() {
                   </label>
                   <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
                     <option value="">Select a service</option>
-                    <option value="general-contracting">General Contracting</option>
+                    <option value="general-contracting">
+                      General Contracting
+                    </option>
                     <option value="project-planning">Project Planning</option>
                     <option value="interior-design">Interior Design</option>
-                    <option value="construction-management">Construction Management</option>
+                    <option value="construction-management">
+                      Construction Management
+                    </option>
                     <option value="renovation">Renovation & Remodeling</option>
                     <option value="commercial">Commercial Construction</option>
                   </select>
@@ -94,15 +99,18 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
               <p className="text-gray-600 mb-6">
-                We are here to help you with your construction needs. Reach out to us through any of the following channels.
+                We are here to help you with your construction needs. Reach out
+                to us through any of the following channels.
               </p>
 
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Address</h3>
                   <p className="text-gray-600">
-                    78/A, Green Lane<br />
-                    New York, NY 10001<br />
+                    78/A, Green Lane
+                    <br />
+                    New York, NY 10001
+                    <br />
                     United States
                   </p>
                 </div>
@@ -110,7 +118,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    <a href="tel:+10783672536" className="hover:text-orange-600">
+                    <a
+                      href="tel:+10783672536"
+                      className="hover:text-orange-600"
+                    >
                       +10 (78) 367 2536
                     </a>
                   </p>
@@ -119,8 +130,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Email</h3>
                   <p className="text-gray-600">
-                    <a href="mailto:info@construction.com" className="hover:text-orange-600">
-                      info@construction.com
+                    <a
+                      href="mailto:rasyom@yahoo.com"
+                      className="hover:text-orange-600"
+                    >
+                      rasyom@yahoo.com
                     </a>
                   </p>
                 </div>
@@ -128,8 +142,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Business Hours</h3>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 6:00 PM<br />
-                    Saturday: 9:00 AM - 4:00 PM<br />
+                    Monday - Friday: 8:00 AM - 6:00 PM
+                    <br />
+                    Saturday: 9:00 AM - 4:00 PM
+                    <br />
                     Sunday: Closed
                   </p>
                 </div>
@@ -137,7 +153,7 @@ export default function ContactPage() {
 
               <div className="mt-8">
                 <Image
-                  src="/assets/img/gallery/video-bg.png"
+                  src="/assets/gallery/video-bg.png"
                   alt="Contact"
                   width={600}
                   height={400}
@@ -158,13 +174,19 @@ export default function ContactPage() {
               Visit our office to discuss your project in person
             </p>
           </div>
-          
+
           <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
             <div className="text-center">
               <p className="text-gray-500 mb-4">Interactive Map</p>
-              <p className="text-sm text-gray-400">
-                78/A, Green Lane, New York, NY 10001
-              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.8252704595097!2d7.321035374103014!3d9.17022948676417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd91a178ac3f9%3A0x4c2159d9017aabfe!2s27%20Isapa%20Cres%2C%20Kubwa%20901101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1756085316119!5m2!1sen!2sng"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
