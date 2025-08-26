@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import OurCompanySection from "../../components/OurCompany";
+import FAQSection from "../../components/Faq";
 
 export default function AboutPage() {
   return (
@@ -84,7 +86,64 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+      <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT TEXT SECTION */}
+          <div>
+            <p className="uppercase text-sm font-semibold text-gray-400 mb-2">
+              Welcome to Rasyom Consults
+            </p>
+
+            <h2 className="text-3xl md:text-4xl font-light leading-snug mb-6">
+              We understand the importance of{" "}
+              <span className="font-bold">innovation</span> <br />
+              and <span className="font-bold">professionalism</span>
+            </h2>
+
+            <p className="text-gray-600 mb-6">
+              Since our launch in 2007, our vision and focus has been to deliver
+              high value projects for our clients with the emphasis on
+              communication and attention to detail.
+            </p>
+
+            <p className="text-gray-600 mb-6">
+              We began Rasyom Consult Ltd with one focus: to build a company
+              that can compete with large construction firms while operating
+              with the flexibility and customer-focus of a small, family-run
+              business. We call it small business values with a big business
+              approach.
+            </p>
+
+            <p className="text-gray-600 mb-8">
+              Today, 75 percent of our business comes from a core group of
+              legacy clients: a testament to our commitment to building strong,
+              long-term working relationships.
+            </p>
+
+            <Link
+              href="/projects"
+              className="inline-block px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+            >
+              See our Project
+            </Link>
+          </div>
+
+          {/* RIGHT IMAGE SECTION */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="w-[90%] md:w-[80%] relative">
+              <Image
+                src="/assets/about/about-main-1.png"
+                alt="Engineer at construction site"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <OurCompanySection />
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -127,6 +186,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection />
     </div>
   );
 }

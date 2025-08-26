@@ -3,37 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "../components/HeroSlider";
-import Slider from "react-slick";
-import Footer from "../components/Footer";
-import StatsSection from "../components/HomeStats";
 import OurCompanySection from "../components/OurCompany";
 import HomeBlogSection from "../components/HomeBlog";
 import HomeCta from "../components/HomeCta";
-import { Quote } from "lucide-react";
-
-import { services, projects, testimonials } from "../utils/data";
-
+import { services, projects } from "@/utils/data";
+import Testimonial from "../components/Testimonial";
 export default function HomePage() {
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 400,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024, // tablets
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 640, // mobile
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
   return (
     <>
       <div className="min-h-screen hero-section">
@@ -253,42 +228,7 @@ export default function HomePage() {
             </p>
 
             {/* Testimonials Carousel */}
-            <div className="mt-12">
-              <Slider {...settings}>
-                {testimonials.map((t, index) => (
-                  <div key={index} className="px-4">
-                    <div className="bg-[#ccc4c433] p-8 rounded-2xl border border-gray-100 h-62 flex flex-col justify-between">
-                      {/* Quote icon */}
-                      <Quote className="w-6 h-6 text-blue-500 mb-4" />
-
-                      {/* Feedback */}
-                      <p className="text-gray-800 text-lg font-medium leading-relaxed">
-                        {t.feedback}
-                      </p>
-
-                      {/* Bottom section */}
-                      <div className="flex items-center gap-3 mt-6">
-                        <Image
-                          width={40}
-                          height={40}
-                          src={t.image}
-                          alt={t.name}
-                          className="w-10 h-10 rounded-full object-cover"
-                        />
-                        <div>
-                          <h3 className="text-sm font-semibold text-left text-gray-900">
-                            {t.name}
-                          </h3>
-                          <p className="text-xs text-left text-gray-500">
-                            {t.role}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
+            <Testimonial />
           </div>
         </section>
 
