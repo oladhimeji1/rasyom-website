@@ -1,9 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "../components/HeroSlider";
-import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import Slider from "react-slick";
 import Footer from "../components/Footer";
+import { Quote } from "lucide-react";
+
+import {services, projects, testimonials} from '../utils/data';
+  
 export default function HomePage() {
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 400,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // tablets
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 640, // mobile
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
   return (
     <>
       <div className="min-h-screen hero-section">
@@ -17,37 +43,42 @@ export default function HomePage() {
         {/* About Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
+            <div className="flex justify-between items-center">
+              <div className="w-1/2">
                 <Image
                   src="/assets/gallery/about2.jpg"
                   alt="About Us"
-                  width={600}
-                  height={400}
+                  width={500}
+                  height={300}
                   className="rounded-lg shadow-lg"
                 />
               </div>
-              <div>
-                <p className="text-zinc-600 uppercase font-bold mb-4">
-                  We Build things differently
+              <div className="w-1/2">
+                <p className="text-zinc-600 uppercase font-bold">
+                  We Build with Excellence
                 </p>
                 <h2 className="text-4xl text-[#030F27] font-medium mb-4">
-                  We can service all of your{" "}
-                  <span className=" font-bold">construction needs</span>
+                  Delivering quality <span className="font-bold">construction solutions</span> across Nigeria
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Rasyom Consults is a full service construction company
-                  offering building solutions from start to finish. Our staff
-                  has been operating on NYC for ten years.
+                  At Rasyom Consults, we are more than builders — we are partners in shaping 
+                  the future of infrastructure across Africa. With years of experience in 
+                  Nigeria’s construction industry, we specialize in delivering modern, 
+                  sustainable, and cost-effective building solutions tailored to our clients’ needs.
+                </p>
+                <p className="text-gray-600">
+                  From residential homes to large-scale commercial projects, our dedicated 
+                  team combines technical expertise, innovation, and deep local knowledge 
+                  to bring your vision to life. We pride ourselves on integrity, 
+                  timely delivery, and workmanship that stands the test of time.
                 </p>
                 <p className="text-gray-600 mb-6">
-                  From contract delivery alternatives to progressive
-                  preconstruction and tech-driven construction services, Rasyom
-                  offers clients flexible options that keep information flowing,
-                  teammates collaborating, and projects on track.
+                  Whether it’s design, planning, or construction, Rasyom Consults provides 
+                  end-to-end services that ensure excellence every step of the way.
                 </p>
 
-                <div className="flex items-center justify-between mb-8">
+
+                {/* <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4 bg-[#F7F9FA] p-8 rounded-lg">
                     <PhoneIcon className="h-6 w-6 text-[#F35C27]" />
                     <div>
@@ -72,7 +103,7 @@ export default function HomePage() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <Link
                   href="/contact"
                   className="inline-block bg-[rgb(243,92,39)] text-white px-12 py-4 rounded-full hover:bg-[rgb(204,54,0)] transition-colors"
@@ -85,57 +116,42 @@ export default function HomePage() {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-[#F7F9FA]">
+        <section className="py-10 bg-[#F7F9FA]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h3 className="text-lg text-zinc-600 font-bold mb-8 uppercase">
+              <h3 className="text-lg text-[rgb(243,92,39)] font-bold mb-2 uppercase">
                 Services we provide
               </h3>
               <p className="text-[#030F27] text-4xl max-w-2xl mx-auto">
-                View <span className="font-bold"> our services</span> below,
+                Explore <span className="font-bold">our core services</span> below,
                 then get in touch with us
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "General Contracting",
-                  image: "/assets/gallery/services1.png",
-                  description:
-                    "As a trusted general contractor, we oversee construction projects from start to finish, ensuring timely completion, budget adherence, and exceptional quality. Our expertise encompasses subcontractor management, material procurement & site supervision",
-                },
-                {
-                  title: "Project Planning",
-                  image: "/assets/gallery/services2.png",
-                  description:
-                    "Effective project planning is the foundation of successful construction projects. Our experienced team helps you navigate the complexities of construction planning, ensuring your project is well organized, on-time, and withing budget",
-                },
-                {
-                  title: "Interior Design",
-                  image: "/assets/gallery/services3.png",
-                  description:
-                    "Transform your space with our expert interior design services. Our team of skilled designers will work with you to create functional, beautiful, and tailored spaces that reflect your styles and meet your needs.",
-                },
-              ].map((service, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg p-6">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-lg flex flex-col"
+                >
                   <Image
                     src={service.image}
                     alt={service.title}
                     width={300}
                     height={200}
-                    className="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-tl-lg rounded-tr-lg"
                   />
-                  <h3 className="text-xl font-semibold mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Link
-                    href="/services"
-                    className="text-blue-600 hover:text-blue-700 font-medium"
-                  >
-                    Explore Now →
-                  </Link>
+                  <div className="p-4">
+                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                    <p className="text-gray-600 mb-4 flex-grow">{service.description}</p>
+                  
+                    <Link
+                      href="/services"
+                      className="text-blue-600 hover:text-blue-700 font-medium"
+                    >
+                      Explore Now →
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
@@ -149,46 +165,42 @@ export default function HomePage() {
           </div>
         </section>
 
+
         {/* Projects Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-10 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h3 className="text-lg text-zinc-600 font-bold mb-8 uppercase">
-                LASTEST PROJECTS
+              <h3 className="text-lg text-[rgb(243,92,39)] font-bold mb-2 uppercase">
+                Latest Projects
               </h3>
               <p className="text-[#030F27] text-4xl mb-8 max-w-2xl mx-auto">
-                View <span className="font-bold"> our projects</span> below,
+                Explore <span className="font-bold">our recent works</span> below,
                 then get in touch with us
               </p>
               <p className="text-gray-600 text-xl max-w-2xl mx-auto">
-                We are proud to show you our latest projects. You will find a
-                diverse gallery of developments, remodeling, additions and new
-                construction.
+                From highways to bridges and modern buildings, we are proud to
+                showcase some of our recent projects that reflect our commitment
+                to quality, innovation, and lasting impact.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                "/assets/gallery/items1.png",
-                "/assets/gallery/items2.png",
-                "/assets/gallery/items3.png",
-              ].map((image, index) => (
+              {projects.map((project, index) => (
                 <div
                   key={index}
                   className="relative group overflow-hidden rounded-xl shadow-md"
                 >
                   <Image
-                    src={image}
-                    alt={`Project_${index}`}
+                    src={project.image}
+                    alt={project.title}
                     width={300}
                     height={400}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="text-white text-lg font-semibold">
-                      Construction Project
-                    </h3>
-                    <button className="mt-2 px-4 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition">
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-4">
+                    <h3 className="text-white text-lg font-semibold">{project.title}</h3>
+                    <p className="text-gray-200 text-sm mt-2">{project.description}</p>
+                    <button className="mt-3 px-4 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition">
                       View More
                     </button>
                   </div>
@@ -199,7 +211,7 @@ export default function HomePage() {
             <div className="text-center mt-12">
               <Link
                 href="/projects"
-                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-block bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[rgb(243,92,39)]/80 transition-colors"
               >
                 All Projects
               </Link>
@@ -207,95 +219,56 @@ export default function HomePage() {
           </div>
         </section>
 
+
         {/* Testminonial Section */}
 
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
             {/* Heading */}
             <h2 className="text-3xl font-bold text-gray-900">
-              What <span className="text-orange-500">our customers</span> are
-              saying about us
+              What <span className="text-orange-500">our customers</span> are saying about us
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              At Rasyom, customer satisfaction is our ultimate goal. See what
-              Bauer clients have to say about a variety of services that we
-              provided for their projects.
+              At Rasyom, customer satisfaction is our ultimate goal. See what our
+              clients have to say about the services we provided for their projects.
             </p>
 
-            {/* Testimonials Grid */}
-            <div className="grid gap-8 mt-12 md:grid-cols-3">
-              {/* Testimonial 1 */}
-              <div className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition border-b-4 border-orange-500">
-                <div className="flex justify-center">
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/assets/customers/testimonial1-2.jpg"
-                    alt="Eloise Smith"
-                    className="w-20 h-20 rounded-full object-cover"
-                  />
-                </div>
-                <h3 className="mt-4 text-lg font-bold text-gray-900">
-                  Eloise Smith
-                </h3>
-                <p className="text-sm text-orange-500 font-medium">
-                  Industrial Engineer and CEO
-                </p>
-                <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-                  Rasyom Limited did an excellent job from the conceptual stage
-                  through the finished construction of our new office.
-                </p>
-                <div className="mt-6 text-gray-700 font-semibold">INDUX</div>
-              </div>
+            {/* Testimonials Carousel */}
+           <div className="mt-12">
+  <Slider {...settings}>
+    {testimonials.map((t, index) => (
+      <div key={index} className="px-4">
+        <div className="bg-[#ccc4c433] p-8 rounded-2xl border border-gray-100 h-62 flex flex-col justify-between">
+          {/* Quote icon */}
+          <Quote className="w-6 h-6 text-blue-500 mb-4" />
 
-              {/* Testimonial 2 */}
-              <div className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-                <div className="flex justify-center">
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/assets/customers/testimonial2.jpg"
-                    alt="Thomas Smith"
-                    className="w-20 h-20 rounded-full object-cover"
-                  />
-                </div>
-                <h3 className="mt-4 text-lg font-bold text-gray-900">
-                  Thomas Smith
-                </h3>
-                <p className="text-sm text-orange-500 font-medium">
-                  Industrial Engineer and CEO
-                </p>
-                <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-                  Rasyom Limited did an excellent job from the conceptual stage
-                  through the finished construction of our new office.
-                </p>
-                <div className="mt-6 text-gray-700 font-semibold">Bauer</div>
-              </div>
+          {/* Feedback */}
+          <p className="text-gray-800 text-lg font-medium leading-relaxed">
+            {t.feedback}
+          </p>
 
-              {/* Testimonial 3 */}
-              <div className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-                <div className="flex justify-center">
-                  <Image
-                    width={100}
-                    height={100}
-                    src="/assets/customers/testimonial3.jpg"
-                    alt="Vincent Smith"
-                    className="w-20 h-20 rounded-full object-cover"
-                  />
-                </div>
-                <h3 className="mt-4 text-lg font-bold text-gray-900">
-                  Vincent Smith
-                </h3>
-                <p className="text-sm text-orange-500 font-medium">
-                  Industrial Engineer and CEO
-                </p>
-                <p className="mt-4 text-gray-600 text-sm leading-relaxed">
-                  Rasyom Limited did an excellent job from the conceptual stage
-                  through the finished construction of our new office.
-                </p>
-                <div className="mt-6 text-gray-700 font-semibold">Arquix</div>
-              </div>
+          {/* Bottom section */}
+          <div className="flex items-center gap-3 mt-6">
+            <Image
+              width={40}
+              height={40}
+              src={t.image}
+              alt={t.name}
+              className="w-10 h-10 rounded-full object-cover"
+            />
+            <div>
+              <h3 className="text-sm font-semibold text-left text-gray-900">{t.name}</h3>
+              <p className="text-xs text-left text-gray-500">{t.role}</p>
             </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </Slider>
+</div>
+
+
+
           </div>
         </section>
 
