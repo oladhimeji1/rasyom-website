@@ -38,7 +38,7 @@ export default function HomePage() {
     <>
       <div className="min-h-screen hero-section">
         {/* Hero Section */}
-        <section className="relative text-white hero-section">
+        <section className="relative text-white">
           <div className=" mx-auto px-4 sm:px-6 lg:px-0">
             <HeroSlider />
           </div>
@@ -295,8 +295,6 @@ export default function HomePage() {
         <HomeBlogSection />
 
         <HomeCta />
-
-        <Footer />
       </div>
     </>
   );

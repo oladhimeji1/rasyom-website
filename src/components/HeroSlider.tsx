@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import Slider from "react-slick";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { heroSlides } from "@/utils/data";
 
 const heroSlides = [
   {
@@ -35,8 +35,8 @@ const heroSlides = [
     tagline: "Innovative. Reliable. Trusted.",
     heading: (
       <>
-        Creating <span className="font-bold">modern buildings</span> that inspire{" "}
-        <span className="font-bold">progress</span>
+        Creating <span className="font-bold">modern buildings</span> that
+        inspire <span className="font-bold">progress</span>
       </>
     ),
   },
@@ -60,17 +60,28 @@ export default function HeroSlider() {
         {heroSlides.map((slide) => (
           <div
             key={slide.id}
-            className="relative h-96 md:h-[600px] bg-center bg-no-repeat bg-cover flex items-center justify-center text-center px-4 overflow-hidden"
-            style={{ backgroundImage: `url(${slide.bg})` }}
+            className="relative h-96 md:h-[600px] overflow-hidden"
           >
-            <div className="flex items-center justify-center flex-col h-full text-white">
+            {/* Background image with next/image */}
+            <Image
+              src={slide.bg}
+              alt={slide.tagline}
+              fill
+              priority
+              className="object-cover object-center"
+            />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/40" />
+
+            {/* Content */}
+            <div className="relative z-10 flex items-center justify-center flex-col h-full text-center text-white px-4">
               <h3 className="uppercase text-md font-medium mb-6 text-zinc-200 tracking-wide">
                 {slide.tagline}
               </h3>
-              <h1 className="text-4xl leading-20 max-w-4xl md:text-7xl font-medium mb-6 drop-shadow-lg">
+              <h1 className="text-4xl leading-snug max-w-4xl md:text-7xl font-medium mb-6 drop-shadow-lg">
                 {slide.heading}
               </h1>
-
               <Link
                 href="/services"
                 className="inline-block mt-10 bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
