@@ -58,7 +58,7 @@
 
 .hero-section {
   position: relative;
-  height: 100vh;
+  min-height: 100vh; /* Changed from height to min-height */
 }
 
 /* .hero-bg-overlay {
