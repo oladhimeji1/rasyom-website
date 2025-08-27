@@ -8,13 +8,14 @@ import HomeBlogSection from "../components/HomeBlog";
 import HomeCta from "../components/HomeCta";
 import { services, projects } from "@/utils/data";
 import Testimonial from "../components/Testimonial";
+
 export default function HomePage() {
   return (
     <>
-      <div className="min-h-screen hero-section">
+      <div className="min-h-screen mt-15 overflow-x-hidden hero-section">
         {/* Hero Section */}
         <section className="relative text-white">
-          <div className=" mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="relative w-full text-white">
             <HeroSlider />
           </div>
         </section>
@@ -22,14 +23,14 @@ export default function HomePage() {
         {/* About Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-1/2">
                 <Image
                   src="/assets/gallery/about2.jpg"
                   alt="About Us"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-lg"
+                  className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>
               <div className="w-full md:w-1/2">
@@ -62,32 +63,6 @@ export default function HomePage() {
                   every step of the way.
                 </p>
 
-                {/* <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4 bg-[#F7F9FA] p-8 rounded-lg">
-                    <PhoneIcon className="h-6 w-6 text-[#F35C27]" />
-                    <div>
-                      <p className="text-sm text-gray-500">Call us</p>
-                      <a
-                        href="tel:+1234567890"
-                        className="font-medium text-[#F35C27]"
-                      >
-                        +1 234 567 890
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 bg-[#F7F9FA] p-8 rounded-lg">
-                    <EnvelopeIcon className="h-6 w-6 text-[#F35C27]" />
-                    <div>
-                      <p className="text-sm text-gray-500">Email us</p>
-                      <a
-                        href="mailto:rasyom@yahoo.com"
-                        className="font-medium text-[#F35C27]"
-                      >
-                        rasyom@yahoo.com
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
                 <Link
                   href="/contact"
                   className="inline-block bg-[rgb(243,92,39)] text-white px-12 py-4 rounded-full hover:bg-[rgb(204,54,0)] transition-colors"
@@ -123,9 +98,9 @@ export default function HomePage() {
                     alt={service.title}
                     width={300}
                     height={200}
-                    className="w-full h-48 object-cover rounded-tl-lg rounded-tr-lg"
+                    className="w-full h-48 object-cover rounded-t-lg"
                   />
-                  <div className="p-4">
+                  <div className="p-4 flex flex-col flex-grow">
                     <h3 className="text-xl font-semibold mb-2">
                       {service.title}
                     </h3>
@@ -144,12 +119,14 @@ export default function HomePage() {
               ))}
             </div>
 
-            <Link
-              href="/services"
-              className="inline-block mt-10 text-center bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
-            >
-              All Services
-            </Link>
+            <div className="text-center">
+              <Link
+                href="/services"
+                className="inline-block mt-10 bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
+              >
+                All Services
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -212,8 +189,7 @@ export default function HomePage() {
 
         <OurCompanySection />
 
-        {/* Testminonial Section */}
-
+        {/* Testimonial Section */}
         <Testimonial />
 
         <HomeBlogSection />

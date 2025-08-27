@@ -68,7 +68,7 @@ export default function HeroSlider() {
               alt={slide.tagline}
               fill
               priority
-              className="object-cover object-center"
+              className="object-cover w-full h-full"
             />
 
             {/* Dark overlay */}

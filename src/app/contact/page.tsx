@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-15 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-orange-600 to-orange-800 text-white">
+      <section className="relative w-full bg-[url('/assets/gallery/title-bg1.jpg')] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
@@ -156,7 +156,7 @@ export default function ContactPage() {
                   alt="Contact"
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-lg"
+                  className="w-full max-w-[600px] h-auto rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -174,19 +174,15 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-gray-500 mb-4">Interactive Map</p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.8252704595097!2d7.321035374103014!3d9.17022948676417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd91a178ac3f9%3A0x4c2159d9017aabfe!2s27%20Isapa%20Cres%2C%20Kubwa%20901101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1756085316119!5m2!1sen!2sng"
-                width="600"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+          <div className="bg-gray-200 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.8252704595097!2d7.321035374103014!3d9.17022948676417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd91a178ac3f9%3A0x4c2159d9017aabfe!2s27%20Isapa%20Cres%2C%20Kubwa%20901101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1756085316119!5m2!1sen!2sng"
+              className="w-full aspect-video"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
