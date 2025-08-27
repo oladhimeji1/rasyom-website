@@ -5,12 +5,14 @@ import FAQSection from "../../components/Faq";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-15">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="relative bg-[url('/assets/about/section-bg.jpg')] bg-center bg-cover">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
+            <h1 className="text-4xl md:text-6xl text-white font-bold mb-6">
+              About Us
+            </h1>
             <p className="text-xl mb-8 text-blue-100">
               At Rasyom, we are committed to delivering top-notch construction
               services that exceed our clients expectations. With a team of

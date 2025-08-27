@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import ServiceFeature from "@/components/ServiceFeature";
+import ServiceMaintenance from "@/components/ServiceMaintenance";
+import ServiceContact from "@/components/ServiceContact";
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-600 to-green-800 text-white">
+      <section className="mt-15 relative bg-[url('/assets/elements/title-bg3.jpg')] bg-cover bg-no-repeat text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Services</h1>
@@ -15,6 +17,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <ServiceFeature />
 
       {/* Services Content */}
       <section className="py-20">
@@ -144,6 +148,9 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <ServiceMaintenance />
+      <ServiceContact />
     </div>
   );
 }
