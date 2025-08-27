@@ -22,8 +22,8 @@ export default function HomePage() {
         {/* About Section */}
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center">
-              <div className="w-1/2">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="w-full md:w-1/2">
                 <Image
                   src="/assets/gallery/about2.jpg"
                   alt="About Us"
@@ -32,7 +32,7 @@ export default function HomePage() {
                   className="rounded-lg shadow-lg"
                 />
               </div>
-              <div className="w-1/2">
+              <div className="w-full md:w-1/2">
                 <p className="text-zinc-600 uppercase font-bold">
                   We Build with Excellence
                 </p>
@@ -214,23 +214,7 @@ export default function HomePage() {
 
         {/* Testminonial Section */}
 
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 text-center">
-            {/* Heading */}
-            <h2 className="text-3xl font-bold text-gray-900">
-              What <span className="text-orange-500">our customers</span> are
-              saying about us
-            </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              At Rasyom, customer satisfaction is our ultimate goal. See what
-              our clients have to say about the services we provided for their
-              projects.
-            </p>
-
-            {/* Testimonials Carousel */}
-            <Testimonial />
-          </div>
-        </section>
+        <Testimonial />
 
         <HomeBlogSection />
 

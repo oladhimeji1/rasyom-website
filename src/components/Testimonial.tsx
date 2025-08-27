@@ -13,16 +13,15 @@ export default function Testimonial() {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 400,
-    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024, // tablets
-        settings: { slidesToShow: 2 },
+        settings: { slidesToShow: 3 },
       },
       {
-        breakpoint: 640, // mobile
-        settings: { slidesToShow: 1 },
+        breakpoint: 768, // mobile
+        settings: { slidesToShow: 2 },
       },
     ],
   };
@@ -44,32 +43,27 @@ export default function Testimonial() {
           <Slider {...settings}>
             {testimonials.map((t, index) => (
               <div key={index} className="px-4">
-                <div className="bg-[#ccc4c433] p-8 rounded-2xl border border-gray-100 h-62 flex flex-col justify-between">
-                  {/* Quote icon */}
-                  <Quote className="w-6 h-6 text-blue-500 mb-4" />
-
-                  {/* Feedback */}
-                  <p className="text-gray-800 text-lg font-medium leading-relaxed">
-                    {t.feedback}
-                  </p>
-
-                  {/* Bottom section */}
-                  <div className="flex items-center gap-3 mt-6">
+                <div className="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
+                  <div className="flex items-center mb-4">
                     <Image
-                      width={40}
-                      height={40}
                       src={t.image}
                       alt={t.name}
-                      className="w-10 h-10 rounded-full object-cover"
+                      width={60}
+                      height={60}
+                      className="w-16 h-16 rounded-full object-cover"
                     />
-                    <div>
-                      <h3 className="text-sm font-semibold text-left text-gray-900">
+                    <div className="ml-4 text-left">
+                      <h3 className="text-lg font-semibold text-gray-900">
                         {t.name}
                       </h3>
-                      <p className="text-xs text-left text-gray-500">
-                        {t.role}
-                      </p>
+                      <p className="text-sm text-gray-600">{t.role}</p>
                     </div>
+                  </div>
+                  <div className="flex-grow">
+                    <Quote className="w-6 h-6 text-orange-500 mb-2" />
+                    <p className="text-gray-700 italic">
+                      &quot;{t.feedback}&quot;
+                    </p>
                   </div>
                 </div>
               </div>
