@@ -15,7 +15,7 @@ export default function HomePage() {
       <div className="min-h-screen mt-15 overflow-x-hidden hero-section">
         {/* Hero Section */}
         <section className="relative text-white">
-          <div className="relative w-full text-white">
+          <div className="relative h- w-full text-white">
             <HeroSlider />
           </div>
         </section>

@@ -39,8 +39,8 @@ const featuresRight = [
 
 export default function ServiceMaintenance() {
   return (
-    <section className="bg-gray-50 py-20 px-15">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-3 gap-12 items-center">
+    <section className="bg-gray-50 py-20">
+      <div className="max-w-8xl w-[90%] mx-auto grid grid-cols-1 xl:grid-cols-3 gap-12 items-center">
         {/* Left side */}
         <div>
           <p className="text-sm font-semibold uppercase text-red-500 mb-2">

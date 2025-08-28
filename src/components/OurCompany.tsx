@@ -32,8 +32,8 @@ const OurCompanySection = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative rounded-md overflow-hidden shadow-md transition-shadow hover:shadow-lg group">
-            <div className="bg-blue-900 text-white p-6">
-              <PencilSquareIcon className="w-12 h-12 mb-4" />
+            <div className=" p-6">
+              <PencilSquareIcon className="w-12 text-blue-500 h-12 mb-4" />
               <h4 className="text-lg font-semibold mb-2">
                 Construction Management
               </h4>
@@ -44,7 +44,7 @@ const OurCompanySection = () => {
             </div>
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
           </div>
-          <div className="bg-white rounded-md border border-gray-200 shadow-sm">
+          <div className="bg-white rounded-md border border-gray-200 shadow-sm transition-shadow hover:shadow-lg group">
             <div className="p-6">
               <UserIcon className="text-orange-500 w-12 h-12 mb-4" />
               <h4 className="text-lg font-semibold text-gray-700 mb-2">
@@ -56,7 +56,7 @@ const OurCompanySection = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white rounded-md border border-gray-200 shadow-sm">
+          <div className="bg-white rounded-md border border-gray-200  shadow-sm">
             <div className="p-6">
               <BuildingOffice2Icon className="text-green-500 w-12 h-12 mb-4" />
               <h4 className="text-lg font-semibold text-gray-700 mb-2">

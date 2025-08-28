@@ -55,7 +55,7 @@ export default function BlogPage() {
       <section className="relative px-8 mt-15 w-full bg-[url('/assets/gallery/title-bg1.jpg')] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">News</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Blogs</h1>
             <p className="text-xl mb-8 text-orange-100">
               Stay updated with our latest blogs and news
             </p>

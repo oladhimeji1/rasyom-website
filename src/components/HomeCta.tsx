@@ -27,9 +27,9 @@ const HomeCTA = () => {
         <div className="container mx-auto px-4 mt-[-4rem] relative z-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Construction Management Card */}
-            <div className="relative rounded-md overflow-hidden shadow-2xl transition-shadow hover:shadow-lg group">
+            <div className="relative rounded-md overflow-hidden shadow-2xl transition-shadow hover:shadow-lg">
               <div className="bg-gray-800 text-white p-6">
-                <PencilSquareIcon className="w-12 h-12 mb-4 text-orange-500 transition-transform duration-300 group-hover:scale-110" />
+                <PencilSquareIcon className="w-12 h-12 mb-4 text-orange-500 transition-transform duration-300" />
                 <h4 className="text-lg font-semibold mb-2">
                   Construction Management
                 </h4>

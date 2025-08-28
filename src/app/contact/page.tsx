@@ -106,11 +106,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Address</h3>
                   <p className="text-gray-600">
-                    78/A, Green Lane
+                    No. 27B Isapa Crescent
                     <br />
-                    New York, NY 10001
+                    Byazhin Kubwa
                     <br />
-                    United States
+                    Abuja, Nigeria
                   </p>
                 </div>
 
@@ -150,15 +150,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-8">
-                <Image
-                  src="/assets/gallery/video-bg.png"
-                  alt="Contact"
-                  width={600}
-                  height={400}
-                  className="w-full max-w-[600px] h-auto rounded-lg shadow-lg"
-                />
-              </div>
+             
             </div>
           </div>
         </div>

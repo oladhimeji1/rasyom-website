@@ -105,26 +105,27 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Newsletter</h4>
-            <p className="text-sm mb-4">
-              Subscribe to our newsletter to get updates.
-            </p>
-            <form>
-              <input
-                type="email"
-                placeholder="Enter Your Email"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-200 placeholder-gray-500 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-              />
-              <button
-                type="submit"
-                className="w-full bg-orange-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors"
+           {/* Contact Links */}
+          <div className="mb-8 md:mb-0">
+            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <div className="grid grid-cols-2 gap-y-2 text-sm">
+              <Link
+                href="tel:"
+                className="hover:text-white transition-colors"
               >
-                Subscribe!
-              </button>
-            </form>
+                +2348346838282
+              </Link>
+              <Link target="_blank" href="mailto:rasyom@yahoo.com" className="hover:text-white transition-colors">
+                rasyom@yahoo.com
+              </Link>
+
+              <p>24B Isapa Crescent Byazhin Kubwa, Abuja</p>
+           
+            </div>
           </div>
+
+
+         
         </div>
 
         {/* Footer Bottom Bar */}

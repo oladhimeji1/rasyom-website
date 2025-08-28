@@ -4,7 +4,7 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 export default function ServiceContact() {
   return (
-    <section className="bg-white py-20 px-4">
+    <section className="bg-white py-20 px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Contact Info */}
         <div>

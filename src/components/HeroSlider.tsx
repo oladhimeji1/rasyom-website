@@ -60,7 +60,7 @@ export default function HeroSlider() {
         {heroSlides.map((slide) => (
           <div
             key={slide.id}
-            className="relative h-96 md:h-[600px] overflow-hidden"
+            className="relative h-screen overflow-hidden"
           >
             {/* Background image with next/image */}
             <Image
