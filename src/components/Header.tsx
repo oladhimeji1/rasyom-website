@@ -21,19 +21,19 @@ export default function Header() {
     <header className="bg-black shadow-sm fixed w-full left-0 z-50 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="/">
-            <Image
-              src={logo}
-              alt="Construction Company"
-              className="h-10 w-auto"
-              height={40}
-              // width is auto, but you must specify one dimension
-              // If you know the logo width, set it here, e.g. width={120}
-              // Otherwise, use 'width={logo.width}' if logo is StaticImageData
-              width={logo.width}
-              priority
-            />
-          </Link>
+          <div className="flex items-center mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-8 h-8 text-white mr-2"
+            >
+              <path d="M12 2L2 22h20L12 2z" />
+            </svg>
+            <h3 className="text-xl text-white font-semibold">
+              Rasyom Consults.
+            </h3>
+          </div>
 
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (

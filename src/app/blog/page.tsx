@@ -1,121 +1,195 @@
+"use client";
+
 import Image from "next/image";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+
+const posts = [
+  {
+    title: "Monday Inspiration: Beautiful and Creative Living Rooms",
+    date: "Aug 26, 2025",
+    excerpt:
+      "Explore this simple friendly decor idea to turn around your home space. NYC style with modern taste.",
+    image: "/assets/blog/blog4-558x410.jpg",
+  },
+  {
+    title: "Things You Can Do to Refresh Your Home This Weekend",
+    date: "Aug 25, 2025",
+    excerpt:
+      "In just a weekend, here’s how to give your space a refresh using affordable tricks and smart layout ideas.",
+    image: "/assets/blog/blog5-558x410.jpg",
+  },
+  {
+    title: "Decorating On A Budget And How To Plan Kids’ Rooms",
+    date: "Aug 24, 2025",
+    excerpt:
+      "Tips for decorating family-friendly and kid-safe rooms without going over budget.",
+    image: "/assets/blog/blog6-558x410.jpg",
+  },
+];
+
+const categories = [
+  "Architecture",
+  "Construction",
+  "Decoration",
+  "Furniture",
+  "Interior",
+];
+
+const recentPosts = [
+  {
+    title: "Things You Can Do to Refresh...",
+    image: "/assets/blog/single_blog_1.png",
+  },
+  {
+    title: "Godstime is Really Write NextJS without Experience 😂😂",
+    image: "/assets/blog/single_blog_3.png",
+  },
+];
+
+const tags = ["Modern", "Office", "Design", "Tips", "Ideas"];
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-indigo-600 to-indigo-800 text-white">
+    <>
+      <section className="relative px-8 mt-15 w-full bg-[url('/assets/gallery/title-bg1.jpg')] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Blog</h1>
-            <p className="text-xl mb-8 text-indigo-100">
-              Latest insights and updates from the construction industry
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">News</h1>
+            <p className="text-xl mb-8 text-orange-100">
+              Stay updated with our latest blogs and news
             </p>
           </div>
         </div>
       </section>
 
-      {/* Blog Content */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Top 10 Construction Trends for 2024",
-                image: "/assets/blog/single_blog_1.png",
-                excerpt:
-                  "Discover the latest trends shaping the construction industry in 2024, from sustainable materials to smart building technologies.",
-                date: "March 15, 2024",
-                author: "John Smith",
-                category: "Industry Trends",
-              },
-              {
-                title: "Sustainable Construction Practices",
-                image: "/assets/blog/single_blog_2.png",
-                excerpt:
-                  "Learn how sustainable construction practices are revolutionizing the industry and reducing environmental impact.",
-                date: "March 10, 2024",
-                author: "Sarah Johnson",
-                category: "Sustainability",
-              },
-              {
-                title: "Smart Building Technologies",
-                image: "/assets/blog/single_blog_3.png",
-                excerpt:
-                  "Explore how smart building technologies are transforming modern construction projects and improving efficiency.",
-                date: "March 5, 2024",
-                author: "Mike Davis",
-                category: "Technology",
-              },
-              {
-                title: "Construction Safety Best Practices",
-                image: "/assets/blog/single_blog_4.png",
-                excerpt:
-                  "Essential safety practices every construction site should implement to protect workers and ensure compliance.",
-                date: "February 28, 2024",
-                author: "Emily Wilson",
-                category: "Safety",
-              },
-              {
-                title: "Cost-Effective Construction Strategies",
-                image: "/assets/blog/single_blog_5.png",
-                excerpt:
-                  "Learn proven strategies to reduce construction costs without compromising on quality or safety.",
-                date: "February 20, 2024",
-                author: "David Brown",
-                category: "Cost Management",
-              },
-              {
-                title: "Future of Construction Materials",
-                image: "/assets/blog/single_blog_1.png",
-                excerpt:
-                  "Discover innovative construction materials that are changing the way we build for the future.",
-                date: "February 15, 2024",
-                author: "Lisa Anderson",
-                category: "Innovation",
-              },
-            ].map((post, index) => (
-              <article
-                key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
+      <section className="bg-gray-50 mt-20 py-12 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+          {/* Left: Blog Posts */}
+          <div className="lg:col-span-2 space-y-8">
+            {posts.map((post, idx) => (
+              <div
+                key={idx}
+                className="bg-white border border-gray-200 rounded-md overflow-hidden shadow-sm"
               >
                 <Image
                   src={post.image}
                   alt={post.title}
-                  width={400}
-                  height={250}
-                  className="w-full h-48 object-cover"
+                  width={800}
+                  height={400}
+                  className="w-full object-cover h-64"
                 />
                 <div className="p-6">
-                  <div className="flex items-center text-sm text-gray-500 mb-2">
-                    <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs">
-                      {post.category}
-                    </span>
-                    <span className="mx-2">•</span>
-                    <span>{post.date}</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 hover:text-indigo-600">
-                    <Link href={`/blog/${index + 1}`}>{post.title}</Link>
+                  <p className="text-sm text-gray-500 mb-1">{post.date}</p>
+                  <h3 className="text-xl font-semibold text-gray-800 hover:text-orange-500 cursor-pointer mb-2">
+                    {post.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">
-                      By {post.author}
-                    </span>
-                    <Link
-                      href={`/blog/${index + 1}`}
-                      className="text-indigo-600 hover:text-indigo-700 font-medium text-sm"
-                    >
-                      Read More →
-                    </Link>
-                  </div>
+                  <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
+                  <Link
+                    href="#"
+                    className="text-orange-500 text-sm font-medium hover:underline"
+                  >
+                    Read More →
+                  </Link>
                 </div>
-              </article>
+              </div>
             ))}
+          </div>
+
+          {/* Right: Sidebar */}
+          <div className="space-y-8">
+            {/* Search */}
+            <div className="bg-white p-4 border border-gray-200 rounded-md">
+              <div className="flex items-center gap-2">
+                <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="w-full border-none focus:outline-none text-sm"
+                />
+              </div>
+            </div>
+
+            {/* Categories */}
+            <div className="bg-white p-4 border border-gray-200 rounded-md">
+              <h4 className="font-semibold mb-3">Categories</h4>
+              <ul className="space-y-1 text-sm text-gray-600">
+                {categories.map((cat, idx) => (
+                  <li
+                    key={idx}
+                    className="hover:text-orange-500 cursor-pointer"
+                  >
+                    {cat}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Recent Posts */}
+            <div className="bg-white p-4 border border-gray-200 rounded-md">
+              <h4 className="font-semibold mb-3">Recent Posts</h4>
+              <ul className="space-y-3">
+                {recentPosts.map((post, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-center gap-3 text-sm text-gray-600"
+                  >
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={60}
+                      height={60}
+                      className="rounded-sm object-cover"
+                    />
+                    <span className="hover:text-orange-500 cursor-pointer">
+                      {post.title}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Tags */}
+            <div className="bg-white p-4 border border-gray-200 rounded-md">
+              <h4 className="font-semibold mb-3">Tags</h4>
+              <div className="flex flex-wrap gap-2 text-sm">
+                {tags.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    className="px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-orange-100 cursor-pointer"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA Image */}
+            <div className="bg-white p-4 border border-gray-200 rounded-md">
+              <Image
+                src="/images/cta-banner.jpg"
+                alt="Free Consultation"
+                width={300}
+                height={200}
+                className="rounded"
+              />
+            </div>
+
+            {/* Newsletter */}
+            <div className="bg-white p-4 border border-gray-200 rounded-md">
+              <h4 className="font-semibold mb-3">Newsletter</h4>
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full border border-gray-300 rounded px-3 py-2 text-sm mb-2"
+              />
+              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded text-sm font-medium">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
