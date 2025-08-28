@@ -13,7 +13,7 @@ const HomeCTA = () => {
         <div className="bg-orange-500 rounded-lg p-8 sm:p-12 mb-8 shadow-2xl relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-4 md:mb-0 md:mr-8 max-w-xl">
-              We're here to help you get started in the right{" "}
+              We&apos;re here to help you get started in the right{" "}
               <br className="hidden lg:inline" />
               direction with your project.
             </h2>
@@ -45,10 +45,10 @@ const HomeCTA = () => {
               <div className="p-6">
                 <UserIcon className="text-orange-500 w-12 h-12 mb-4" />
                 <h4 className="text-lg font-semibold text-white mb-2">
-                  Owner's Representation
+                  Owner&apos;s Representation
                 </h4>
                 <p className="text-sm text-gray-400">
-                  A good owner’s rep saves their client time, money and a lot of
+                  A good owner&apos;s rep saves their client time, money and a lot of
                   headaches.
                 </p>
               </div>

@@ -20,11 +20,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center">
-            <img 
+            {/* <img 
               src="/assets/img/logo/logo.png" 
               alt="Construction Company" 
               className="h-10 w-auto"
-            />
+            /> */}
           </Link>
           
           <div className="hidden md:flex space-x-8">

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import React from "react";
-import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+// import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 const Footer = () => {
   return (
