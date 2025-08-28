@@ -21,7 +21,7 @@ export default function Header() {
     <header className="bg-black shadow-sm fixed w-full left-0 z-50 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

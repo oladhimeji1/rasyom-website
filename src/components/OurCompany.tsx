@@ -6,7 +6,7 @@ import {
 
 const OurCompanySection = () => {
   return (
-    <div className="py-16 px-16 bg-white">
+    <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-xl text-gray-700 font-semibold uppercase mb-6">
           OUR COMPANY
