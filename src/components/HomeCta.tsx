@@ -7,10 +7,10 @@ import {
 
 const HomeCTA = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-4">
+    <div className="min-h-140 bg-center bg-no-repeat bg-cover bg-[url('/assets/hero/slider_bg1.jpg')] text-white flex items-center justify-center p-4">
       <div className="w-full max-w-7xl mx-auto">
         {/* Hero Section */}
-        <div className="bg-orange-500 rounded-lg p-8 sm:p-12 mb-8 shadow-2xl relative z-10">
+        <div className="bg-orange-500 rounded-lg  p-8 sm:p-12 mb-25 shadow-2xl relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-4 md:mb-0 md:mr-8 max-w-xl">
               We&apos;re here to help you get started in the right{" "}
