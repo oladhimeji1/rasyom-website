@@ -162,7 +162,7 @@ export default function ProjectsPage() {
                   </div>
                   <Link
                     href={`/projects/${index + 1}`}
-                    className="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="inline-block mt-4 bg-[rgb(243,92,39)] text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                   >
                     View Details
                   </Link>
