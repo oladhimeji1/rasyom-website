@@ -2,10 +2,10 @@
 
 import {
   BuildingOfficeIcon,
-  WrenchScrewdriverIcon,
-  BeakerIcon,
+  // WrenchScrewdriverIcon,
+  // BeakerIcon,
   TruckIcon,
-  Cog6ToothIcon,
+  // Cog6ToothIcon,
   BuildingLibraryIcon,
 } from "@heroicons/react/24/outline";
 
@@ -13,40 +13,23 @@ const features = [
   {
     title: "Building Construction",
     description:
-      "This area delivers the control you want over all critical aspects of your project.",
+      "From residential to commercial projects, we deliver high-quality building construction services with a focus on durability, safety, and modern design.",
     icon: BuildingOfficeIcon,
-  },
-  {
-    title: "Maintenance and Repairs",
-    description:
-      "This area delivers the control you want over all critical aspects of your project.",
-    icon: WrenchScrewdriverIcon,
-  },
-  {
-    title: "Oil and Gas Engineering",
-    description:
-      "This area delivers the control you want over all critical aspects of your project.",
-    icon: BeakerIcon,
   },
   {
     title: "Civil Engineering",
     description:
-      "This area delivers the control you want over all critical aspects of your project.",
+      "We specialize in roads, bridges, drainage, and other civil engineering works that improve communities and support economic development.",
     icon: TruckIcon,
   },
   {
-    title: "Automobile Manufacturing",
+    title: "Construction & Engineering Consultancy",
     description:
-      "This area delivers the control you want over all critical aspects of your project.",
-    icon: Cog6ToothIcon,
-  },
-  {
-    title: "Construction and Engineering",
-    description:
-      "This area delivers the control you want over all critical aspects of your project.",
+      "We provide end-to-end consultancy services, helping clients plan, design, and execute projects with expert guidance and innovative solutions.",
     icon: BuildingLibraryIcon,
   },
 ];
+
 
 export default function ServiceFeature() {
   return (

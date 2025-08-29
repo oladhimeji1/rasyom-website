@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#171A1E] text-gray-400 py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex justify-between gap-8">
           {/* Company Info */}
           <div className="mb-8 md:mb-0">
             <div className="flex items-center mb-4">
@@ -23,7 +23,7 @@ const Footer = () => {
                 Rasyom Consults.
               </h3>
             </div>
-            <p className="text-sm leading-relaxed mb-4">
+            <p className="text-sm leading-relaxed mb-4 w-80">
               With over 10 years of experience in construction, we partner with
               owners and design professionals to build high-quality projects.
             </p>
@@ -62,43 +62,34 @@ const Footer = () => {
           </div>
 
           {/* Useful Links */}
-          <div className="mb-8 md:mb-0">
-            <h4 className="text-white font-semibold mb-4">Useful Links</h4>
-            <div className="grid grid-cols-2 gap-y-2 text-sm">
+          <div className="mb-8 md:mb-0 w-52">
+            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <div className=" gap-y-2 text-sm">
               <Link
                 href="/about"
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors block"
               >
                 About Us
               </Link>
-              <Link href="/blog" className="hover:text-white transition-colors">
-                News
+              <Link href="/blog" className="hover:text-white transition-colors block">
+                Blogs
               </Link>
               <Link
                 href="/services"
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors block"
               >
                 Services
               </Link>
               <Link
-                href="/careers"
-                className="hover:text-white transition-colors"
-              >
-                Careers
-              </Link>
-              <Link
                 href="/projects"
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors block"
               >
                 Projects
-              </Link>
-              <Link href="/help" className="hover:text-white transition-colors">
-                Help Desk
               </Link>
 
               <Link
                 href="/contact"
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors block"
               >
                 Contact
               </Link>
@@ -108,24 +99,21 @@ const Footer = () => {
            {/* Contact Links */}
           <div className="mb-8 md:mb-0">
             <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <div className="grid grid-cols-2 gap-y-2 text-sm">
+            <div className="gap-y-2 text-sm">
               <Link
                 href="tel:"
-                className="hover:text-white transition-colors"
+                className="hover:text-white transition-colors block"
               >
                 +2348346838282
               </Link>
-              <Link target="_blank" href="mailto:rasyom@yahoo.com" className="hover:text-white transition-colors">
+              <Link target="_blank" href="mailto:rasyom@yahoo.com" className="hover:text-white transition-colors block">
                 rasyom@yahoo.com
               </Link>
 
               <p>24B Isapa Crescent Byazhin Kubwa, Abuja</p>
            
             </div>
-          </div>
-
-
-         
+          </div>         
         </div>
 
         {/* Footer Bottom Bar */}

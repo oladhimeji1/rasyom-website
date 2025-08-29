@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-// import Image from "next/image";
 import { useState } from "react";
-// import logo from "../../public/assets/logo/logo.png";
+import { usePathname } from "next/navigation"; // ✅ import
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname(); // ✅ get current route
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -36,15 +36,22 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-white hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href; // ✅ check active route
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`px-3 py-2 text-sm font-medium transition-colors ${
+                    isActive
+                      ? "text-orange-500 border-b-2 border-orange-500" // ✅ active style
+                      : "text-white hover:text-orange-400"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="md:hidden">
@@ -73,16 +80,23 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block text-white px-3 py-2 text-base font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`block px-3 py-2 text-base font-medium ${
+                      isActive
+                        ? "text-orange-500 border-l-4 border-orange-500"
+                        : "text-white hover:text-orange-400"
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}

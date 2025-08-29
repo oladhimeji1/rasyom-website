@@ -36,19 +36,19 @@ export const testimonials = [
 export const services = [
     {
       title: "Road Construction",
-      image: "/assets/gallery/services1.png",
+      image: "/assets/gallery/road-construction.jpg",
       description:
         "We deliver durable and smooth road networks that connect cities, communities, and businesses across Nigeria. From highways to rural roads, our work enhances mobility and drives economic growth.",
     },
     {
       title: "Bridge Construction",
-      image: "/assets/gallery/services2.png",
+      image: "/assets/gallery/bridge-construction.jpeg",
       description:
         "Our bridges are engineered with precision, strength, and safety in mind. We create lasting infrastructure that supports connectivity and stands resilient for generations to come.",
     },
     {
       title: "Building Projects",
-      image: "/assets/gallery/services3.png",
+      image: "/assets/gallery/building-construction.jpg",
       description:
         "From residential homes to commercial complexes and industrial facilities, we design and construct buildings that combine functionality, modern design, and sustainability.",
     },

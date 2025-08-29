@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import OurCompanySection from "../../components/OurCompany";
+// import OurCompanySection from "../../components/OurCompany";
 import FAQSection from "../../components/Faq";
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
             <div>
               <Image
                 src="/assets/gallery/about.png"
-                alt="About Us"
+                alt="About Our Company"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
@@ -38,20 +38,20 @@ export default function AboutPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">
-                Complete solution of large projects
+                Building Excellence, Delivering Trust
               </h2>
               <p className="text-gray-600 mb-6">
-                Questions explained agreeable preferred strangers too him her
-                son. There are many variations of passages. Architecture,
-                control and construction of projects of all kinds, we have the
-                experts in each area of work.
+                For over <span className="font-semibold">20 years</span>, we have been at the forefront of the construction industry, 
+                delivering large-scale projects with precision, innovation, and integrity. 
+                From architecture and engineering to project management and construction, 
+                our team brings together expertise in every field to ensure world-class results.
               </p>
               <p className="text-gray-600 mb-6">
-                We are a leading construction company with over 20 years of
-                experience in delivering high-quality construction projects. Our
-                team of experts is dedicated to providing innovative solutions
-                that meet our clients unique needs and exceed their
-                expectations.
+                We pride ourselves on creating sustainable, cost-effective, and 
+                future-ready solutions tailored to each client’s unique vision. 
+                Our commitment to quality, safety, and excellence has earned us 
+                the trust of partners across residential, commercial, and 
+                industrial sectors.
               </p>
               <Link
                 href="/contact"
@@ -64,29 +64,62 @@ export default function AboutPage() {
         </div>
       </section>
 
+
       {/* Mission & Vision */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-gray-600">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            {/* Mission Card */}
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+              <div className="flex items-center mb-4">
+                <div className="p-3 bg-blue-100 rounded-full mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-blue-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6 4H3" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800">Our Mission</h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
                 To deliver exceptional construction services that transform our
-                clients visions into reality. We are committed to excellence,
+                clients’ visions into reality. We are committed to excellence,
                 innovation, and sustainability in every project we undertake.
               </p>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-gray-600">
-                To be the most trusted construction partner, known for our
-                integrity, quality, and commitment to client satisfaction. We
-                strive to set new standards in the construction industry.
+
+            {/* Vision Card */}
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+              <div className="flex items-center mb-4">
+                <div className="p-3 bg-green-100 rounded-full mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800">Our Vision</h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                To be the most trusted construction partner, known for our integrity,
+                quality, and commitment to client satisfaction. We strive to set new
+                standards in the construction industry.
               </p>
             </div>
+
           </div>
         </div>
       </section>
+
 
       <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -98,7 +131,7 @@ export default function AboutPage() {
 
             <h2 className="text-3xl md:text-4xl font-light leading-snug mb-6">
               We understand the importance of{" "}
-              <span className="font-bold">innovation</span> <br />
+              <span className="font-bold">innovation</span> <br className="md:hidden"/>
               and <span className="font-bold">professionalism</span>
             </h2>
 
@@ -124,7 +157,7 @@ export default function AboutPage() {
 
             <Link
               href="/projects"
-              className="inline-block px-6 py-3 border border-orange-500 text-orange-500 font-semibold rounded-full hover:bg-orange-500 hover:text-white transition-colors"
+              className="inline-block px-6 py-3 border border-orange-500 text-white font-semibold rounded-full bg-orange-500 transition-colors"
             >
               See our Project
             </Link>
@@ -145,7 +178,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <OurCompanySection />
+      {/* <OurCompanySection /> */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -155,18 +188,18 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex justify-around flex-wrap gap-8">
             {[
               {
-                name: "John Smith",
-                role: "Project Manager",
+                name: "Engr. Nasiru Yomi Rasaq",
+                role: "CEO/Founder",
                 image: "/assets/customers/testimonial1-2.jpg",
               },
-              {
-                name: "Sarah Johnson",
-                role: "Senior Architect",
-                image: "/assets/customers/testimonial2.jpg",
-              },
+              // {
+              //   name: "Sarah Johnson",
+              //   role: "Senior Architect",
+              //   image: "/assets/customers/testimonial2.jpg",
+              // },
               {
                 name: "Mike Davis",
                 role: "Construction Supervisor",

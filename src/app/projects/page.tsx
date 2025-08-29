@@ -34,7 +34,7 @@ export default function ProjectsPage() {
   </div>
 
   {/* Image Gallery */}
-  <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-0">
+  {/* <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-0">
     <img
       src="/assets/gallery/project1-6-425x528.jpg"
       alt="Project 1"
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
       alt="Project 5"
       className="w-full h-64 object-cover"
     />
-  </div>
+  </div> */}
 </section>
 
 
@@ -173,10 +173,10 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-cover bg-center" style={{ backgroundImage: "url('/assets/gallery/project-form-bg.jpg')" }}>
+      {/* <section className="py-16 bg-cover bg-center" style={{ backgroundImage: "url('/assets/gallery/project-form-bg.jpg')" }}>
   <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4">
     
-    {/* Left Side - Contact Info */}
+    {/* Left Side - Contact Info 
     <div className="bg-black bg-opacity-70 text-white p-8 rounded-lg">
       <h2 className="text-3xl font-light">
         Get in <span className="font-bold">Touch</span>
@@ -187,7 +187,7 @@ export default function ProjectsPage() {
       </p>
 
       <div className="mt-6 grid grid-cols-1 gap-6 text-sm">
-        {/* Addresses */}
+        {/* Addresses 
         <div>
           <h3 className="font-semibold">Bauer Internation</h3>
           <p>24B Isapa Crescent Byazhin Kubwa, Abuja</p>
@@ -198,7 +198,7 @@ export default function ProjectsPage() {
         
       </div>
 
-      {/* Contact Numbers */}
+      {/* Contact Numbers 
       <div className="mt-6 grid grid-cols-2 gap-6">
         <div>
           <p className="font-semibold">Support</p>
@@ -210,7 +210,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      {/* Email */}
+      {/* Email 
       <div className="mt-6">
         <p className="font-semibold">Our Email</p>
         <a href="mailto:info@BauerX.com" className="text-orange-400 flex items-center gap-1">
@@ -219,7 +219,7 @@ export default function ProjectsPage() {
       </div>
     </div>
 
-    {/* Right Side - Contact Form */}
+    {/* Right Side - Contact Form 
     <div className="bg-white shadow-lg rounded-lg p-8">
       <h3 className="text-xl font-semibold text-gray-800">
         Let’s Talk About Your Project
@@ -254,7 +254,7 @@ export default function ProjectsPage() {
       </form>
     </div>
   </div>
-</section>
+</section> */}
 
     </div>
   );

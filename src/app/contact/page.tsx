@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -169,7 +169,7 @@ export default function ContactPage() {
           <div className="bg-gray-200 rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.8252704595097!2d7.321035374103014!3d9.17022948676417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd91a178ac3f9%3A0x4c2159d9017aabfe!2s27%20Isapa%20Cres%2C%20Kubwa%20901101%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1756085316119!5m2!1sen!2sng"
-              className="w-full aspect-video"
+              className="w-full h-96 aspect-video"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

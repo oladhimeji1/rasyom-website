@@ -26,7 +26,7 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-1/2">
                 <Image
-                  src="/assets/gallery/about2.jpg"
+                  src="/assets/gallery/civil-engineer.jpg"
                   alt="About Us"
                   width={500}
                   height={300}

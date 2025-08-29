@@ -1,41 +1,46 @@
 "use client";
 
 import {
-  WrenchIcon,
+  // WrenchIcon,
   BuildingOfficeIcon,
-  PaintBrushIcon,
-  PaperAirplaneIcon,
+  // PaintBrushIcon,
+  // PaperAirplaneIcon,
+  WrenchScrewdriverIcon,
+  CogIcon,
+  ClipboardDocumentCheckIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const featuresLeft = [
   {
-    title: "Renovation Contractors",
+    title: "Building Construction",
     description:
-      "Whether you need home exterior repair or interior improvement.",
-    icon: WrenchIcon,
+      "From design to execution, we deliver durable residential, commercial, and industrial buildings.",
+    icon: BuildingOfficeIcon,
   },
   {
-    title: "Flooring Installation",
+    title: "Facility Maintenance",
     description:
-      "We guarantee great results and a finished product you will be satisfied with.",
-    icon: PaintBrushIcon,
+      "Reliable maintenance solutions that extend the life and performance of your facilities.",
+    icon: WrenchScrewdriverIcon,
   },
 ];
 
 const featuresRight = [
   {
-    title: "Home Renovations",
-    description: "We provide more than average handyman renovations.",
-    icon: BuildingOfficeIcon,
+    title: "Engineering Solutions",
+    description:
+      "Civil, structural, and mechanical engineering expertise tailored to your unique projects.",
+    icon: CogIcon,
   },
   {
-    title: "100% Value Delivered",
+    title: "Project Management",
     description:
-      "We focus on offering you excellent customer service and quality work.",
-    icon: PaperAirplaneIcon,
+      "End-to-end project planning, supervision, and delivery with quality and timeliness guaranteed.",
+    icon: ClipboardDocumentCheckIcon,
   },
 ];
+
 
 export default function ServiceMaintenance() {
   return (

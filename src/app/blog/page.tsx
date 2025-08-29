@@ -176,7 +176,7 @@ export default function BlogPage() {
             </div>
 
             {/* Newsletter */}
-            <div className="bg-white p-4 border border-gray-200 rounded-md">
+            {/* <div className="bg-white p-4 border border-gray-200 rounded-md">
               <h4 className="font-semibold mb-3">Newsletter</h4>
               <input
                 type="email"
@@ -186,7 +186,7 @@ export default function BlogPage() {
               <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded text-sm font-medium">
                 Subscribe
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
