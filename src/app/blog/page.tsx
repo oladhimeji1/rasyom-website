@@ -167,7 +167,7 @@ export default function BlogPage() {
             {/* CTA Image */}
             <div className="bg-white p-4 border border-gray-200 rounded-md">
               <Image
-                src="/images/cta-banner.jpg"
+                src="/assets/gallery/consultation.png"
                 alt="Free Consultation"
                 width={300}
                 height={200}
