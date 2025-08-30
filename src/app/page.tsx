@@ -8,6 +8,7 @@ import HomeBlogSection from "../components/HomeBlog";
 import HomeCta from "../components/HomeCta";
 import { services, projects } from "@/utils/data";
 import Testimonial from "../components/Testimonial";
+import HomeClients from "../components/HomeClients";
 
 export default function HomePage() {
   return (
@@ -129,6 +130,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <HomeClients />
 
         {/* Projects Section */}
         <section className="py-10 bg-gray-50">
