@@ -8,7 +8,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl mb-8 text-[#9A0200]">
+            <p className="text-xl mb-8 text-[#fff]">
               Get in touch with us for your construction needs
             </p>
           </div>
@@ -117,10 +117,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    <a
-                      href="tel:+10783672536"
-                      className="hover:text-[#9A0200]"
-                    >
+                    <a href="tel:+10783672536" className="hover:text-[#9A0200]">
                       +10 (78) 367 2536
                     </a>
                   </p>
@@ -149,8 +146,6 @@ export default function ContactPage() {
                   </p>
                 </div>
               </div>
-
-             
             </div>
           </div>
         </div>

@@ -31,17 +31,14 @@ const HomeBlogSection = () => {
               <h4 className="text-lg font-semibold text-blue-900 mb-2">
                 Construction Employment News: April 2019
               </h4>
-              <Link
-                href="#"
-                className="text-[#9A0200] hover:underline text-sm"
-              >
+              <Link href="#" className="text-[#9A0200] hover:underline text-sm">
                 Read More
               </Link>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src="/assets/blog/blog5-558x410.jpg"
+              src="/assets/blog/blog1.avif"
               alt="Technology, Contracts and Jobsite Safety"
               className="w-full h-56 object-cover"
               width={558}
@@ -52,17 +49,14 @@ const HomeBlogSection = () => {
               <h4 className="text-lg font-semibold text-blue-900 mb-2">
                 Technology, Contracts and Jobsite Safety
               </h4>
-              <Link
-                href="#"
-                className="text-[#9A0200] hover:underline text-sm"
-              >
+              <Link href="#" className="text-[#9A0200] hover:underline text-sm">
                 Read More
               </Link>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src="/assets/blog/blog6-558x410.jpg"
+              src="/assets/blog/blog2.webp"
               alt="How Technology Can Help Contractors Be More Efficient"
               className="w-full h-56 object-cover"
               width={558}
@@ -73,10 +67,7 @@ const HomeBlogSection = () => {
               <h4 className="text-lg font-semibold text-blue-900 mb-2">
                 How Technology Can Help Contractors Be More Efficient
               </h4>
-              <Link
-                href="#"
-                className="text-[#9A0200] hover:underline text-sm"
-              >
+              <Link href="#" className="text-[#9A0200] hover:underline text-sm">
                 Read More
               </Link>
             </div>
