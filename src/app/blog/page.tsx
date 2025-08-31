@@ -17,14 +17,14 @@ const posts = [
     date: "Aug 25, 2025",
     excerpt:
       "In just a weekend, here’s how to give your space a refresh using affordable tricks and smart layout ideas.",
-    image: "/assets/blog/blog5-558x410.jpg",
+    image: "/assets/blog/blog1.avif",
   },
   {
     title: "Decorating On A Budget And How To Plan Kids’ Rooms",
     date: "Aug 24, 2025",
     excerpt:
       "Tips for decorating family-friendly and kid-safe rooms without going over budget.",
-    image: "/assets/blog/blog6-558x410.jpg",
+    image: "/assets/blog/blog2.webp",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Blogs</h1>
-            <p className="text-xl mb-8 text-[#9A0200]">
+            <p className="text-xl mb-8 text-[#fff]">
               Stay updated with our latest blogs and news
             </p>
           </div>
@@ -115,10 +115,7 @@ export default function BlogPage() {
               <h4 className="font-semibold mb-3">Categories</h4>
               <ul className="space-y-1 text-sm text-gray-600">
                 {categories.map((cat, idx) => (
-                  <li
-                    key={idx}
-                    className="hover:text-[#9A0200] cursor-pointer"
-                  >
+                  <li key={idx} className="hover:text-[#9A0200] cursor-pointer">
                     {cat}
                   </li>
                 ))}

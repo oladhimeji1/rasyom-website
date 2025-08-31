@@ -57,7 +57,7 @@ export default function Header() {
               className="text-gray-700 hover:text-primary-600"
             >
               <svg
-                className="h-6 w-6 text-white"
+                className="h-6 w-6 text-[#9A0200]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -86,7 +86,7 @@ export default function Header() {
                     className={`block px-3 py-2 text-base font-medium ${
                       isActive
                         ? "text-[#9A0200] border-l-4 border-[#9A0200]"
-                        : "text-white hover:text-[#9A0200]"
+                        : "text-[#000] hover:text-[#9A0200]"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >

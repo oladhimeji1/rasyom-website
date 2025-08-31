@@ -15,7 +15,7 @@ const Footer = () => {
               <Image
                 src="/assets/logo/logo.png"
                 alt="Logo"
-                width={130}
+                width={100}
                 height={50}
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -68,7 +68,10 @@ const Footer = () => {
               >
                 About Us
               </Link>
-              <Link href="/blog" className="hover:text-white transition-colors block">
+              <Link
+                href="/blog"
+                className="hover:text-white transition-colors block"
+              >
                 Blogs
               </Link>
               <Link
@@ -93,7 +96,7 @@ const Footer = () => {
             </div>
           </div>
 
-           {/* Contact Links */}
+          {/* Contact Links */}
           <div className="mb-8 md:mb-0">
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <div className="gap-y-2 text-sm">
@@ -103,14 +106,17 @@ const Footer = () => {
               >
                 +2348346838282
               </Link>
-              <Link target="_blank" href="mailto:rasyom@yahoo.com" className="hover:text-white transition-colors block">
+              <Link
+                target="_blank"
+                href="mailto:rasyom@yahoo.com"
+                className="hover:text-white transition-colors block"
+              >
                 rasyom@yahoo.com
               </Link>
 
               <p>24B Isapa Crescent Byazhin Kubwa, Abuja</p>
-           
             </div>
-          </div>         
+          </div>
         </div>
 
         {/* Footer Bottom Bar */}

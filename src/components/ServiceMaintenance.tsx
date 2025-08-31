@@ -41,7 +41,6 @@ const featuresRight = [
   },
 ];
 
-
 export default function ServiceMaintenance() {
   return (
     <section className="bg-gray-50 py-20">
@@ -82,7 +81,7 @@ export default function ServiceMaintenance() {
 
         <div className="flex justify-center">
           <Image
-            src="/assets/gallery/worker-png.png"
+            src="/assets/gallery/workman-with-meter-white-background.jpg"
             alt="Handyman"
             width={350}
             height={500}
