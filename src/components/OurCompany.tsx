@@ -54,7 +54,7 @@ const OurCompanySection = () => {
       {/* Bridges */}
       <div className="bg-white rounded-md border border-gray-200 shadow-sm transition-shadow hover:shadow-lg group">
         <div className="p-6">
-          <UserIcon className="text-orange-500 w-12 h-12 mb-4" />
+          <UserIcon className="text-[#9A0200] w-12 h-12 mb-4" />
           <h4 className="text-lg font-semibold text-gray-700 mb-2">
             Bridge Engineering
           </h4>

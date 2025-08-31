@@ -162,7 +162,7 @@ export default function ProjectsPage() {
                   </div>
                   <Link
                     href={`/projects/${index + 1}`}
-                    className="inline-block mt-4 bg-[rgb(243,92,39)] text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="inline-block mt-4 bg-[#9A0200] text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                   >
                     View Details
                   </Link>
@@ -191,7 +191,7 @@ export default function ProjectsPage() {
         <div>
           <h3 className="font-semibold">Bauer Internation</h3>
           <p>24B Isapa Crescent Byazhin Kubwa, Abuja</p>
-          <a href="#" target="_blank" className="text-orange-400 flex items-center gap-1 mt-1">
+          <a href="#" target="_blank" className="text-[#9A0200] flex items-center gap-1 mt-1">
             <span>📍</span> Find Us on Map
           </a>
         </div>
@@ -213,7 +213,7 @@ export default function ProjectsPage() {
       {/* Email 
       <div className="mt-6">
         <p className="font-semibold">Our Email</p>
-        <a href="mailto:info@BauerX.com" className="text-orange-400 flex items-center gap-1">
+        <a href="mailto:info@BauerX.com" className="text-[#9A0200] flex items-center gap-1">
           <span>📧</span> rasyom@yahoo.com
         </a>
       </div>
@@ -232,22 +232,22 @@ export default function ProjectsPage() {
         <input
           type="text"
           placeholder="Name"
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
         />
         <input
           type="email"
           placeholder="Email"
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
         />
         <textarea
           placeholder="Message"
           rows={4}
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
         ></textarea>
 
         <button
           type="submit"
-          className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-full transition"
+          className="w-full bg-[#9A0200] hover:bg-[#9A0200] text-white font-semibold py-3 rounded-full transition"
         >
           SUBMIT
         </button>

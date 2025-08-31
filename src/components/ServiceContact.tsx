@@ -101,7 +101,7 @@ export default function ServiceContact() {
             />
             <button
               type="submit"
-              className="w-fit bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold px-6 py-2 rounded hover:opacity-90 transition"
+              className="w-fit bg-gradient-to-r from-[#9A0200] to-red-500 text-white font-semibold px-6 py-2 rounded hover:opacity-90 transition"
             >
               SUBMIT
             </button>

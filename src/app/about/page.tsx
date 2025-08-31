@@ -55,7 +55,7 @@ export default function AboutPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-block bg-[rgb(243,92,39)] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-block bg-[#9A0200] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Get In Touch
               </Link>
@@ -157,7 +157,7 @@ export default function AboutPage() {
 
             <Link
               href="/projects"
-              className="inline-block px-6 py-3 border border-orange-500 text-white font-semibold rounded-full bg-orange-500 transition-colors"
+              className="inline-block px-6 py-3 border border-[#9A0200] text-white font-semibold rounded-full bg-[#9A0200] transition-colors"
             >
               See our Project
             </Link>

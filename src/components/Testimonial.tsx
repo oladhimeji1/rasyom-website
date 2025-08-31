@@ -44,7 +44,7 @@ export default function Testimonial() {
       <div className="container mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-900">
-          What <span className="text-orange-500">our customers</span> are saying
+          What <span className="text-[#9A0200]">our customers</span> are saying
           about us
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -60,7 +60,7 @@ export default function Testimonial() {
                 <div className="bg-gray-200 px-6 pb-6 pt-4 rounded-xl transition h-full flex flex-col justify-between text-left">
                   {/* Quote + Feedback */}
                   <div>
-                    <Quote className="w-6 h-6 text-orange-500 mb-4" />
+                    <Quote className="w-6 h-6 text-[#9A0200] mb-4" />
                     <p className="text-gray-700 leading-relaxed">
                       {t.feedback}
                     </p>

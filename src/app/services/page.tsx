@@ -135,7 +135,7 @@ export default function ServicesPage() {
               </ul>
               <Link
                 href="/contact"
-                className="inline-block bg-[rgb(243,92,39)] text-white px-4 py-2 rounded-lg hover:bg-[rgba(190,57,9,1)] transition-colors"
+                className="inline-block bg-[#9A0200] text-white px-4 py-2 rounded-lg hover:bg-[rgba(190,57,9,1)] transition-colors"
               >
                 Get Quote
               </Link>

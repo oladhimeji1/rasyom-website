@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroSlider from "../components/HeroSlider";
-import OurCompanySection from "../components/OurCompany";
+// import OurCompanySection from "../components/OurCompany";
 import HomeBlogSection from "../components/HomeBlog";
 import HomeCta from "../components/HomeCta";
 import { services, projects } from "@/utils/data";
@@ -66,7 +66,7 @@ export default function HomePage() {
 
                 <Link
                   href="/contact"
-                  className="inline-block bg-[rgb(243,92,39)] text-white px-12 py-4 rounded-full hover:bg-[rgb(204,54,0)] transition-colors"
+                  className="inline-block bg-[#9A0200] text-white px-12 py-4 rounded-full hover:bg-[rgb(204,54,0)] transition-colors"
                 >
                   Get a Quote
                 </Link>
@@ -79,7 +79,7 @@ export default function HomePage() {
         <section className="py-10 bg-[#F7F9FA]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h3 className="text-lg text-[rgb(243,92,39)] font-bold mb-2 uppercase">
+              <h3 className="text-lg text-[#9A0200] font-bold mb-2 uppercase">
                 Services we provide
               </h3>
               <p className="text-[#030F27] text-4xl max-w-2xl mx-auto">
@@ -123,7 +123,7 @@ export default function HomePage() {
             <div className="text-center">
               <Link
                 href="/services"
-                className="inline-block mt-10 bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
+                className="inline-block mt-10 bg-[#9A0200] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
               >
                 All Services
               </Link>
@@ -137,7 +137,7 @@ export default function HomePage() {
         <section className="py-10 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h3 className="text-lg text-[rgb(243,92,39)] font-bold mb-2 uppercase">
+              <h3 className="text-lg text-[#9A0200] font-bold mb-2 uppercase">
                 Latest Projects
               </h3>
               <p className="text-[#030F27] text-4xl mb-8 max-w-2xl mx-auto">
@@ -171,7 +171,7 @@ export default function HomePage() {
                     <p className="text-gray-200 text-sm mt-2">
                       {project.description}
                     </p>
-                    <button className="mt-3 px-4 py-2 bg-orange-500 text-white rounded-lg shadow hover:bg-orange-600 transition">
+                    <button className="mt-3 px-4 py-2 bg-[#9A0200] text-white rounded-lg shadow hover:bg-[#9A0200] transition">
                       View More
                     </button>
                   </div>
@@ -182,7 +182,7 @@ export default function HomePage() {
             <div className="text-center mt-12">
               <Link
                 href="/projects"
-                className="inline-block bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[rgb(243,92,39)]/80 transition-colors"
+                className="inline-block bg-[#9A0200] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#9A0200]/80 transition-colors"
               >
                 All Projects
               </Link>
@@ -190,7 +190,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <OurCompanySection />
+        {/* <OurCompanySection /> */}
 
         {/* Testimonial Section */}
         <Testimonial />

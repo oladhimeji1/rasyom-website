@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation"; // ✅ import
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,24 +19,20 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-black shadow-sm fixed w-full left-0 z-50 top-0">
+    <header className="bg-white shadow-sm fixed w-full left-0 z-50 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-8 h-8 text-white mr-2"
-            >
-              <path d="M12 2L2 22h20L12 2z" />
-            </svg>
-            <h3 className="text-xl text-white font-semibold">
-              Rasyom Consults.
-            </h3>
+            <Image
+              src="/assets/logo/logo.png"
+              alt="Logo"
+              width={130}
+              height={50}
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 text-black">
             {navigation.map((item) => {
               const isActive = pathname === item.href; // ✅ check active route
               return (
@@ -44,8 +41,8 @@ export default function Header() {
                   href={item.href}
                   className={`px-3 py-2 text-sm font-medium transition-colors ${
                     isActive
-                      ? "text-orange-500 border-b-2 border-orange-500" // ✅ active style
-                      : "text-white hover:text-orange-400"
+                      ? "text-[#9A0200] border-b-2  border-[#9A0200]" // ✅ active style
+                      : "text-black hover:text-[#9A0200]"
                   }`}
                 >
                   {item.name}
@@ -88,8 +85,8 @@ export default function Header() {
                     href={item.href}
                     className={`block px-3 py-2 text-base font-medium ${
                       isActive
-                        ? "text-orange-500 border-l-4 border-orange-500"
-                        : "text-white hover:text-orange-400"
+                        ? "text-[#9A0200] border-l-4 border-[#9A0200]"
+                        : "text-white hover:text-[#9A0200]"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >

@@ -40,7 +40,7 @@ export default function StatsSection() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
         {stats.map((stat) => (
           <div key={stat.id} className="flex flex-col items-center text-white">
-            <stat.icon className="h-12 w-12 text-orange-500 mb-4" />
+            <stat.icon className="h-12 w-12 text-[#9A0200] mb-4" />
             <h3 className="text-3xl font-bold">{stat.value}</h3>
             <p className="text-gray-300 mt-2">{stat.label}</p>
           </div>

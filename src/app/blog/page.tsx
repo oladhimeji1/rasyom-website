@@ -56,7 +56,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Blogs</h1>
-            <p className="text-xl mb-8 text-orange-100">
+            <p className="text-xl mb-8 text-[#9A0200]">
               Stay updated with our latest blogs and news
             </p>
           </div>
@@ -81,13 +81,13 @@ export default function BlogPage() {
                 />
                 <div className="p-6">
                   <p className="text-sm text-gray-500 mb-1">{post.date}</p>
-                  <h3 className="text-xl font-semibold text-gray-800 hover:text-orange-500 cursor-pointer mb-2">
+                  <h3 className="text-xl font-semibold text-gray-800 hover:text-[#9A0200] cursor-pointer mb-2">
                     {post.title}
                   </h3>
                   <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                   <Link
                     href="#"
-                    className="text-orange-500 text-sm font-medium hover:underline"
+                    className="text-[#9A0200] text-sm font-medium hover:underline"
                   >
                     Read More →
                   </Link>
@@ -117,7 +117,7 @@ export default function BlogPage() {
                 {categories.map((cat, idx) => (
                   <li
                     key={idx}
-                    className="hover:text-orange-500 cursor-pointer"
+                    className="hover:text-[#9A0200] cursor-pointer"
                   >
                     {cat}
                   </li>
@@ -141,7 +141,7 @@ export default function BlogPage() {
                       height={60}
                       className="rounded-sm object-cover"
                     />
-                    <span className="hover:text-orange-500 cursor-pointer">
+                    <span className="hover:text-[#9A0200] cursor-pointer">
                       {post.title}
                     </span>
                   </li>
@@ -156,7 +156,7 @@ export default function BlogPage() {
                 {tags.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-orange-100 cursor-pointer"
+                    className="px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-[#9A0200] cursor-pointer"
                   >
                     {tag}
                   </span>
@@ -183,7 +183,7 @@ export default function BlogPage() {
                 placeholder="Your Email"
                 className="w-full border border-gray-300 rounded px-3 py-2 text-sm mb-2"
               />
-              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded text-sm font-medium">
+              <button className="w-full bg-[#9A0200] hover:bg-[#9A0200] text-white py-2 rounded text-sm font-medium">
                 Subscribe
               </button>
             </div> */}

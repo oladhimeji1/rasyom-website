@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import React from "react";
 // import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
@@ -11,17 +12,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="mb-8 md:mb-0">
             <div className="flex items-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-8 h-8 text-white mr-2"
-              >
-                <path d="M12 2L2 22h20L12 2z" />
-              </svg>
-              <h3 className="text-xl text-white font-semibold">
-                Rasyom Consults.
-              </h3>
+              <Image
+                src="/assets/logo/logo.png"
+                alt="Logo"
+                width={130}
+                height={50}
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
             <p className="text-sm leading-relaxed mb-4 w-80">
               With over 10 years of experience in construction, we partner with

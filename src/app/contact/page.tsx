@@ -8,7 +8,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl mb-8 text-orange-100">
+            <p className="text-xl mb-8 text-[#9A0200]">
               Get in touch with us for your construction needs
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
                   />
                 </div>
                 <div>
@@ -44,7 +44,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
                   />
                 </div>
                 <div>
@@ -54,14 +54,14 @@ export default function ContactPage() {
                   <input
                     type="tel"
                     placeholder="Enter your phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     Service Type
                   </label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A0200]">
                     <option value="">Select a service</option>
                     <option value="general-contracting">
                       General Contracting
@@ -82,12 +82,12 @@ export default function ContactPage() {
                   <textarea
                     placeholder="Tell us about your project"
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9A0200]"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition-colors"
+                  className="w-full bg-[#9A0200] text-white py-3 rounded-lg hover:bg-[#9A0200] transition-colors"
                 >
                   Send Message
                 </button>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   <p className="text-gray-600">
                     <a
                       href="tel:+10783672536"
-                      className="hover:text-orange-600"
+                      className="hover:text-[#9A0200]"
                     >
                       +10 (78) 367 2536
                     </a>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   <p className="text-gray-600">
                     <a
                       href="mailto:rasyom@yahoo.com"
-                      className="hover:text-orange-600"
+                      className="hover:text-[#9A0200]"
                     >
                       rasyom@yahoo.com
                     </a>

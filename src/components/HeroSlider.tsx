@@ -84,7 +84,7 @@ export default function HeroSlider() {
               </h1>
               <Link
                 href="/services"
-                className="inline-block mt-10 bg-[rgb(243,92,39)] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
+                className="inline-block mt-10 bg-[#9A0200] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#363636] transition-colors"
               >
                 Our Services
               </Link>

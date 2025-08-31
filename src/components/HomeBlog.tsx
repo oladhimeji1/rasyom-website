@@ -13,7 +13,7 @@ const HomeBlogSection = () => {
               Latest News &amp; Blog
             </h3>
           </div>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full">
+          <button className="bg-[#9A0200] hover:bg-[#9A0200] text-white font-semibold py-2 px-6 rounded-full">
             More News
           </button>
         </div>
@@ -33,7 +33,7 @@ const HomeBlogSection = () => {
               </h4>
               <Link
                 href="#"
-                className="text-orange-500 hover:underline text-sm"
+                className="text-[#9A0200] hover:underline text-sm"
               >
                 Read More
               </Link>
@@ -54,7 +54,7 @@ const HomeBlogSection = () => {
               </h4>
               <Link
                 href="#"
-                className="text-orange-500 hover:underline text-sm"
+                className="text-[#9A0200] hover:underline text-sm"
               >
                 Read More
               </Link>
@@ -75,7 +75,7 @@ const HomeBlogSection = () => {
               </h4>
               <Link
                 href="#"
-                className="text-orange-500 hover:underline text-sm"
+                className="text-[#9A0200] hover:underline text-sm"
               >
                 Read More
               </Link>

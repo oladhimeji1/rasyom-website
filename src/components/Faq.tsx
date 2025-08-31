@@ -52,7 +52,7 @@ export default function FAQSection() {
         </h2>
         <p className="mt-4 text-center text-gray-600">
           Here are some of the most common questions we get at{" "}
-          <span className="font-semibold text-orange-500">
+          <span className="font-semibold text-[#9A0200]">
             Rasyom Consults Ltd
           </span>
           .
